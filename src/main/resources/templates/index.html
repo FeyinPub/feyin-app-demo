@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8"/>
+    <title>飞印应用demo</title>
+    <meta name="viewport"
+          content="width=device-width,initial-scale=1,user-scalable=no,maximum-scale=1,minimum-scale=1"/>
+    <script type="text/javascript" src="/test/static/js/jquery-3.1.1.min.js"></script>
+    <link rel="stylesheet" href="/test/static/css/weui.min.css"/>
+    <link rel="stylesheet" href="/test/static/css/example.css"/>
+    <link rel="stylesheet" href="/test/static/css/index.css"/>
+    <script src="/test/static/js/weui.min.js"></script>
+    <script src="/test/static/js/index.js"></script>
+</head>
+<body class="body">
+<div class="container">
+    <div class="page js_show">
+        <div class="page__hd">
+            <h1 class="page__title" style="font-size: 25px;">打印测试</h1>
+
+            <p class="page__desc">该页面仅用于测试飞印打印功能</p>
+        </div>
+        <div class="page__bd">
+            <div class="weui-cells__title">选择打印机</div>
+            <div class="weui-cells">
+                <div class="weui-cell">
+                    <div class="weui-cell__bd">
+                        <select class="select" id="select"></select>
+                    </div>
+                </div>
+            </div>
+            <div class="weui-cells__title">打印内容</div>
+            <div class="weui-cells">
+                <div class="weui-cell">
+                    <div class="weui-cell__bd">
+                        <textarea id="msg" class="weui-textarea" rows="6" placeholder="请输入需要测试打印的内容"></textarea>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="weui-btn-area">
+            <button id="btn" class="weui-btn weui-btn_primary" onclick="printing()">打印</button>
+        </div>
+    </div>
+</div>
+</body>
+</html>
