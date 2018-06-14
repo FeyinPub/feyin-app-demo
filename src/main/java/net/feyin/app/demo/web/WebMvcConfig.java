@@ -18,7 +18,7 @@ public class WebMvcConfig extends WebMvcConfigurerAdapter {
     //静态资源文件映射
     @Override
     public void addResourceHandlers(ResourceHandlerRegistry registry) {
-        registry.addResourceHandler("/test/static/**").addResourceLocations("classpath:/static/");
+        registry.addResourceHandler("/static/**").addResourceLocations("classpath:/static/");
         super.addResourceHandlers(registry);
     }
 

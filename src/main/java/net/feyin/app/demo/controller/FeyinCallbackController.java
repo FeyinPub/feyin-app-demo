@@ -21,7 +21,7 @@ import java.util.Date;
 import java.util.Map;
 
 @RestController
-@RequestMapping(value = "/test/feyin")
+@RequestMapping(value = "/feyin")
 public class FeyinCallbackController {
 
     private static Logger log = LoggerFactory.getLogger(FeyinCallbackController.class);

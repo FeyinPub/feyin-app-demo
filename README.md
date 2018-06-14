@@ -18,3 +18,7 @@ feyin-app-demo
 1、net.feyin.app.demo为demo主代码，仅供参考使用；net.feyin.openapi为飞印开放api的jdk，可直接导入使用
 
 2、作为样例，本工程没有使用数据持久化对用户的数据进行永久性储存，开发者需自行实现该逻辑。
+
+3、FeyinCallbackController为飞印应用的回调地址入口，FeyinIndexController为飞印应用登录地址入口。
+FeyinTestController为飞印应用demo测试入口，用户配置好application.properties文件，在本地运行FeyinAppDemoApplication启动应用后，可通过访问http://127.0.0.1:8080/feyin/test/index，测试demo的运行。
+注：使用测试时，会刷新飞印的token，如项目已正常上线，谨慎使用

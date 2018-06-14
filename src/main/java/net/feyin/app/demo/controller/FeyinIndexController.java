@@ -21,7 +21,7 @@ import java.util.List;
 import java.util.Map;
 
 @Controller
-@RequestMapping(value = "/test/feyin")
+@RequestMapping(value = "/feyin")
 public class FeyinIndexController extends BaseController {
 
     private static Logger log = LoggerFactory.getLogger(FeyinIndexController.class);
@@ -93,6 +93,9 @@ public class FeyinIndexController extends BaseController {
         msgPrintingRequest.setMsg_content(msg);
         String msgNo = feyinPrintService.sendMsg(msgPrintingRequest);
         log.info("no {} send msg success, msg no: {}", no, msgNo);
+        if (StringUtils.isBlank(msgNo)) {
+            return FeyinResultMapUtil.getErrorMap("-1", "发送打印失败");
+        }
         return FeyinResultMapUtil.getSuccessMap();
     }
 
