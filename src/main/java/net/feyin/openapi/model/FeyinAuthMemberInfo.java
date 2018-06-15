@@ -3,17 +3,17 @@ package net.feyin.openapi.model;
 import java.util.List;
 
 public class FeyinAuthMemberInfo {
-    private String id;
+    private String uid;
     private String name;
     private String mobile;
     private List<FeyinAuthMemberDeviceInfo> devices;
 
-    public String getId() {
-        return id;
+    public String getUid() {
+        return uid;
     }
 
-    public void setId(String id) {
-        this.id = id;
+    public void setUid(String uid) {
+        this.uid = uid;
     }
 
     public String getName() {
@@ -43,7 +43,7 @@ public class FeyinAuthMemberInfo {
     @Override
     public String toString() {
         return "FeyinAuthMemberInfo{" +
-                "id='" + id + '\'' +
+                "uid='" + uid + '\'' +
                 ", name='" + name + '\'' +
                 ", mobile='" + mobile + '\'' +
                 ", devices=" + devices +

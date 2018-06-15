@@ -3,7 +3,6 @@ package net.feyin.openapi.model;
 public class FeyinAuthMember {
     private String uid;
     private String name;
-    private String mobile;
     private String created_at;
 
     public String getUid() {
@@ -22,14 +21,6 @@ public class FeyinAuthMember {
         this.name = name;
     }
 
-    public String getMobile() {
-        return mobile;
-    }
-
-    public void setMobile(String mobile) {
-        this.mobile = mobile;
-    }
-
     public String getCreated_at() {
         return created_at;
     }
@@ -43,7 +34,6 @@ public class FeyinAuthMember {
         return "FeyinAuthMember{" +
                 "uid='" + uid + '\'' +
                 ", name='" + name + '\'' +
-                ", mobile='" + mobile + '\'' +
                 ", created_at='" + created_at + '\'' +
                 '}';
     }
