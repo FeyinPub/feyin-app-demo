@@ -3,7 +3,6 @@ package net.feyin.openapi.util;
 import net.feyin.openapi.enumeration.FeyinErrorCode;
 import net.feyin.openapi.exception.ResponseException;
 import net.feyin.openapi.model.ErrorResponse;
-import net.feyin.openapi.util.JsonUtil;
 
 public class FeyinRequestErrorHandel {
 

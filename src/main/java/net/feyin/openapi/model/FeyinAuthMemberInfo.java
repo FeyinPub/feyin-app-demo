@@ -5,7 +5,6 @@ import java.util.List;
 public class FeyinAuthMemberInfo {
     private String uid;
     private String name;
-    private String mobile;
     private List<FeyinAuthMemberDeviceInfo> devices;
 
     public String getUid() {
@@ -24,14 +23,6 @@ public class FeyinAuthMemberInfo {
         this.name = name;
     }
 
-    public String getMobile() {
-        return mobile;
-    }
-
-    public void setMobile(String mobile) {
-        this.mobile = mobile;
-    }
-
     public List<FeyinAuthMemberDeviceInfo> getDevices() {
         return devices;
     }
@@ -45,7 +36,6 @@ public class FeyinAuthMemberInfo {
         return "FeyinAuthMemberInfo{" +
                 "uid='" + uid + '\'' +
                 ", name='" + name + '\'' +
-                ", mobile='" + mobile + '\'' +
                 ", devices=" + devices +
                 '}';
     }
